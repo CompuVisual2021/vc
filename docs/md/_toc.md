@@ -20,5 +20,7 @@
 
 > :Collapse label=Members
 > 
-> [NN](/docs/members/nn)
+> [Sebastian Castañeda](/docs/members/Sebastian-Castaneda)
+> [Camilo Florez](/docs/members/Camilo-Florez)
 > [Marcel Martinez](/docs/members/Marcel-Martinez)
+> [Luis Sandoval](/docs/members/Luis-Sandoval)
