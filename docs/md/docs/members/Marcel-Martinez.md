@@ -30,6 +30,7 @@ En 1959, Bela Julesz ,un científico de la visión, psicólogo y MacArthur Fello
 A finales de los 90, muchas revistas para niños presentaban autostereogramas. Incluso las revistas de juegos como Nintendo Power tenían una sección específicamente diseñada para estas ilusiones.
 - ### Ejemplos
 Clik on the image to switch it.
+
 > :P5 sketch=/docs/sketches/optical-illusions/Marcel/ejemplos.js, width=780, height=460
 
 ## Referencias
