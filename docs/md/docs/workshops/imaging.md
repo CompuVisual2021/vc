@@ -42,4 +42,8 @@ Original(supIzq), edges original(supDer), edges soft(infIzq), edges grayscale(in
 
 > :P5 sketch=/docs/sketches/workshops/imaging/imgPhotoMosaic.js, width=780, height=460
 
+## Asii Art
+
+> :P5 sketch=/docs/sketches/workshops/imaging/imgAscii.js, width=780, height=460
+
 > :ToCPrevNext
