@@ -25,7 +25,7 @@
 
 > :Collapse label=Team
 > 
-> [Sebastian Castañeda](/docs/team/Sebastian-Castaneda)
-> [Camilo Florez](/docs/team/Camilo-Florez)
-> [Marcel Martinez](/docs/team/Marcel-Martinez)
-> [Luis Sandoval](/docs/team/Luis-Sandoval)
+> [Sebastian Castañeda](/docs/members/Sebastian-Castaneda)
+> [Camilo Florez](/docs/members/Camilo-Florez)
+> [Marcel Martinez](/docs/members/Marcel-Martinez)
+> [Luis Sandoval](/docs/members/Luis-Sandoval)
