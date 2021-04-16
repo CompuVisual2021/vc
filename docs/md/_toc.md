@@ -2,11 +2,16 @@
 
 > :Collapse label=Workshops
 > 
-> [Imaging & Video](/docs/workshops/imaging)
-> [Rendering](/docs/workshops/rendering)
-> [Algovis](/docs/workshops/algovis)
-> [Computer Graphics](/docs/workshops/cg)
-> [HCI](/docs/workshops/hci)
+> > :Collapse label=Workshop 1
+> >
+> > [Image Luma & Kernel](/docs/workshops/workshop1/imgLumaKernel)
+> > [Video Luma & Kernel](/docs/workshops/workshop1/vidLumaKernel)
+> > [Photographic mosaic](/docs/workshops/workshop1/photoMosaic)
+> > [Ascii art](/docs/workshops/workshop1/asciiArt)
+>
+> > :Collapse label=Workshop 2
+> >
+> > [We are Working on it](/docs/workshops/workshop2/rendering)
 
 > :Collapse label=P5 Code Snippets
 > 
@@ -18,7 +23,7 @@
 > [Libs](/docs/snippets/lib)
 > [Sound](/docs/snippets/sound)
 
-> :Collapse label=Members
+> :Collapse label=Team
 > 
 > [Sebastian Castañeda](/docs/members/Sebastian-Castaneda)
 > [Camilo Florez](/docs/members/Camilo-Florez)
