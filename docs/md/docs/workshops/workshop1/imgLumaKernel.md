@@ -117,6 +117,27 @@ Adapted from [here](https://p5js.org/es/examples/image-brightness.html).
 > >   dstimg.updatePixels();
 > > }
 > > ```
+>
+> > :Tab title=document, icon=description
+> >
+> > >Para cambiar la imagen a tonalidades de gris se tiene en cuenta la eficacia luminosa, esta es la medida de que tan bien una fuente de luz produce luz visible por el ojo humano para esto se crea una función de luminosidad que describe la sensibilidad promedio del ojo humano al brillo, esta se basa en juicios subjetivos que tienen que ver con cómo percibimos el color a través de los bastones, por lo tanto podríamos decir que cada ecuación que usamos es una función de luminosidad con diferentes parámetros. 
+> > >
+> > >Luma weighted gray = [\{R * 0.299 + G * 0.587 + B * 0.114}](:Formula) from matlab
+> > >
+> > >Esta se basa en la función rgb2gray de matlab Estos son los mismos pesos utilizados por la función rgb2ntsc para calcular el componente Y .
+Los coeficientes utilizados para calcular los valores de escala de grises en rgb2gray son idénticos a los utilizados para calcular la luminancia (E'y) en REC. UIT-R BT. 601-7 después de redondearse a 3 posiciones decimales.
+Rec. UIT-R BT. 601-7 calcula E'y utilizando la siguiente fórmula:
+[\{R * 0.299 + G * 0.587 + B * 0.114}](:Formula)
+> > >
+> > >Luma Gray = [\{0.2126 * R + 0.7152 * G + 0.0722 * B}](:Formula)
+> > >
+> > >Esta es la misma fórmula que se utiliza en la conversión de Rec. 709 RGB a YCbCr para encontrar el componente Y, esta solo puede ser usada en espacios RBG 
+> > >
+> > >Average gray = [\{(R + G + B) / 3}](:Formula)
+> > >
+> > >Este se basa en el promedio de todos los canales de color RGB es el menos eficiente de los 3 ya que se pierde definicion en la imagen 
+> > >
+
 
 ## Kernel Mask
 
@@ -331,6 +352,16 @@ Adapted from [here](https://idmnyu.github.io/p5.js-image/index.html);
 > >   //image(dstimg, 0, 0, dstimg.width, dstimg.height);
 > > }
 > > ```
+>
+> > :Tab title=document, icon=description
+> >
+> > >Se implementó una técnica de detección de bordes con una implementación de kernel convolution, esto se hace comparando los cambios bruscos en el brillo de la imagen es decir comparando el valor de cada pixel del lado derecho e izquierdo (dirección x) y del lado superior e inferior (dirección y) y usamos un kernel de 3x3 para cada dirección. estos cambios de intensidad de luz es la gradiente del borde que se pueden medir mediante la siguiente fórmula: [\{|G| = sqrt((Gx*Gx) + (Gy*Gy))}](:Formula)  
+donde Gx es el gradiente en la dirección x y Gy el gradiente en la dirección y.
+> > > 
+> > >El kernel de dirección x calcula los borde en posición vertical por esto lleva números negativos al lado izquierdo y positivos al derecho, así mismo el kernel en dirección y calcula   los bordes en posición horizontal y lleva número negativos arriba y positivos abajo
+> > > 
+
+
 
 ## Instance mode
 
