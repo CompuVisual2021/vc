@@ -40,8 +40,8 @@ function setup() {
 }
 
 function draw() {
+  bigPicture.resize(770, 455);
   createCanvas(bigPicture.width, bigPicture.height);
-  bigPicture.resize(1000, 1000);
 
   let beg = performance.now()
   storePics();

@@ -109,5 +109,36 @@
 > >   })
 > > }
 > > ```
+>
+> > :Tab title= Document, icon=description
+>> 
+>>  ***Ascii Art*** 
+>> 
+>> El arte ASCII es una técnica de diseño gráfico que utiliza computadoras, este tuvo un auge bastante alto cuando se interactuaba con las terminal de los primeros sistemas operativos,
+>> para la presentación y consta de imágenes ensambladas a partir de los 95 caracteres imprimibles definidos por el estándar ASCII de 1963 y conjuntos de caracteres compatibles con ASCII 
+>> con caracteres extendidos patentados (más allá de los 128 caracteres de ASCII estándar de 7 bits). El término también se usa libremente para referirse al arte visual basado en texto en 
+>> general. El arte ASCII se puede crear con cualquier editor de texto y, a menudo, se usa con lenguajes de forma libre. La mayoría de los ejemplos de arte ASCII requieren una fuente 
+>> monoespaciada.
+>>
+>> El arte ASCII se inventó, en gran parte, porque las primeras impresoras a menudo carecían de capacidad gráfica y, por lo tanto, se usaban caracteres en lugar de marcas gráficas, para
+>> marcar divisiones entre diferentes trabajos de impresión, haciendo que la división sea más fácil de detectar para que los resultados puedan ser separados más fácilmente por un operador 
+>> de computadora o un empleado. El arte ASCII también se utilizó en los primeros correos electrónicos cuando las imágenes no se podían incrustar.
+>>
+>> El arte ASCII también es un descendiente de la poesía concreta y virtual y el llamado arte de la máquina de escribir: una técnica previa a la computadora para crear imágenes a partir de 
+>> caracteres disponibles en máquinas de escribir (la primera pieza conocida de arte de máquina de escribir: una imagen de una mariposa compuesta de corchetes, guiones , barras y un 
+>> asterisco, realizado por Flora Stacey, una secretaria británica, en 1898). Cualquier imagen puede ser analizada para convertirse en ascii art, en la mayoría de los ejemplos su uso es 
+>> lúdico para conseguir las mejores combinaciones de caracteres y algoritmos para obtener un resultado de alta calidad.
+>>
+>> para el ejercicio desarrollado en el taller se utilizaron diferentes transformaciones (gamma, luma y promedio de grises), junto con promedios de cada uno de los canales RGB antes de 
+>> hacer la conversión a ascii, además como reemplazo para crear él ascii art se usaron dos arreglos uno de 8 caracteres y otro de 64 caracteres.
+>
+## Conclusions
+
+> :Tabs
+> > :Tab title=conclusions, icon=description
+> > >- Con el uso de ascii art y Photographic Mosaic se motiva al estudiante para profundizar en el manejo de la composición de píxeles y la búsqueda de elementos que la reemplacen obteniendo un resultado lo más parecido al original.
+> > > 
+> > >- en él ejerció de ascii art, observamos que tomando como base diferentes canales y variando la paleta de caracteres ,los resultados variaron notablemente.
+> > >
 
 > :ToCPrevNext
