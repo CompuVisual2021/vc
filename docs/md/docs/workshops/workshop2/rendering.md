@@ -7,47 +7,54 @@
 > > :Tab title=Code, icon=code
 > >
 > > ```js | texture1.js
-> > let img;
-> > let imgPath = "/vc/docs/sketches/Pokémon.jpg";
-> > 
-> > function preload() {
-> >   img = loadImage(imgPath);
-> > }
-> > 
-> > 
-> > function setup() {
-> >   createCanvas(400, 400, WEBGL);
-> >   ortho(-width/2, width/2, -height/2, height/2);
-> >   textureMode(NORMAL);
-> > }
-> > 
-> > function draw() {
-> >   background(200);
-> >   //scale(0.4); // Scaled to make model fit into canvas
-> >   //rotateX(frameCount * 0.01);
-> >   //rotateY(frameCount * 0.01);
-> >   //fill(color("red"));
-> >   texture(img);
-> >   cover(true);
-> >   //box(200,200,200);
-> >   orbitControl();
-> > }
-> > 
-> > function cover(texture = false) {
-> >   beginShape();
-> >   if (texture) {
-> >     vertex(-width / 2, -height / 2, 0, 0, 0);
-> >     vertex(width / 2, -height / 2, 0, 1, 0);
-> >     vertex(width / 2, height / 2, 0, 1, 1);
-> >     vertex(-width / 2, height / 2, 0, 0, 1);
-> >   } else {
-> >     vertex(-width / 2, -height / 2, 0);
-> >     vertex(width / 2, -height / 2, 0);
-> >     vertex(width / 2, height / 2, 0);
-> >     vertex(-width / 2, height / 2, 0);
-> >   }
-> >   endShape(CLOSE);
-> > }
+> >let img;
+> >let theShader;
+> >let imgPath = "/vc/docs/sketches/Pokémon.jpg";
+> >
+> >function preload() {
+> >  theShader = loadShader('/vc/docs/sketches/workshops/workshop2/shader.vert',
+> >  '/vc/docs/sketches/workshops/workshop2/texture.frag');
+> >  img = loadImage(imgPath);
+> >}
+> >
+> >function setup() {
+> >  createCanvas(400, 400, WEBGL);
+> >  noStroke();
+> >  textureMode(NORMAL);
+> >  shader(theShader);
+> >  theShader.setUniform('texture',img);
+> >}
+> >
+> >function draw() {
+> >  background(0);
+> >  beginShape();
+> >  //fill(color("red"));
+> >  vertex(-width / 2, -height / 2, 0, 0, 0);
+> >  //fill(color("blue"));
+> >  vertex(width / 2, -height / 2, 0, 1, 0);
+> >  //fill(color("green"));
+> >  vertex(width / 2, height / 2, 0, 1, 1);
+> >  //fill(color("cyan"));
+> >  vertex(-width / 2, height / 2, 0, 0, 1);
+> >  endShape(CLOSE);
+> >  orbitControl();
+> >}
+> >
+> >function cover(texture = false) {
+> >  beginShape();
+> >  if (texture) {
+> >    vertex(-width / 2, -height / 2, 0, 0, 0);
+> >    vertex(width / 2, -height / 2, 0, 1, 0);
+> >    vertex(width / 2, height / 2, 0, 1, 1);
+> >    vertex(-width / 2, height / 2, 0, 0, 1);
+> >  } else {
+> >    vertex(-width / 2, -height / 2, 0);
+> >    vertex(width / 2, -height / 2, 0);
+> >    vertex(width / 2, height / 2, 0);
+> >    vertex(-width / 2, height / 2, 0);
+> >  }
+> >  endShape(CLOSE);
+> >}
 > > ```
 
 > :ToCPrevNext

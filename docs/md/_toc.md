@@ -11,7 +11,8 @@
 >
 > > :Collapse label=Workshop 2
 > >
-> > [We are Working on it](/docs/workshops/workshop2/rendering)
+> > [Hardware Weighted Gray](/docs/workshops/workshop2/rendering)
+> > [Global Illumination](/docs/workshops/workshop2/lumi)
 
 > :Collapse label=P5 Code Snippets
 > 
