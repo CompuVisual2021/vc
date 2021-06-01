@@ -1,26 +1,32 @@
 let img;
+let theShader;
 let imgPath = "/vc/docs/sketches/Pokémon.jpg";
 
 function preload() {
-    img = loadImage(imgPath);
-  }
-
+  theShader = loadShader('/vc/docs/sketches/workshops/workshop2/shader.vert','/vc/docs/sketches/workshops/workshop2/texture.frag');
+   img = loadImage(imgPath);
+}
 
 function setup() {
   createCanvas(400, 400, WEBGL);
-  ortho(-width/2, width/2, -height/2, height/2);
+  noStroke();
   textureMode(NORMAL);
+  shader(theShader);
+  theShader.setUniform('texture',img);
 }
 
 function draw() {
-  background(200);
-  //scale(0.4); // Scaled to make model fit into canvas
-  //rotateX(frameCount * 0.01);
-  //rotateY(frameCount * 0.01);
+  background(0);
+  beginShape();
   //fill(color("red"));
-  texture(img);
-  cover(true);
-  //box(200,200,200);
+  vertex(-width / 2, -height / 2, 0, 0, 0);
+  //fill(color("blue"));
+  vertex(width / 2, -height / 2, 0, 1, 0);
+  //fill(color("green"));
+  vertex(width / 2, height / 2, 0, 1, 1);
+  //fill(color("cyan"));
+  vertex(-width / 2, height / 2, 0, 0, 1);
+  endShape(CLOSE);
   orbitControl();
 }
 
@@ -39,3 +45,10 @@ function cover(texture = false) {
   }
   endShape(CLOSE);
 }
+/*
+function mousePressed() {
+  if (mouseX > 0 && mouseX < 100 && mouseY > 0 && mouseY < 100) {
+    let fs = fullscreen();
+    fullscreen(!fs);
+  }
+}*/
