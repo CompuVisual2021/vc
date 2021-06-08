@@ -13,6 +13,7 @@
 > >
 > > [Hardware Weighted Gray](/docs/workshops/workshop2/rendering)
 > > [Global Illumination](/docs/workshops/workshop2/lumi)
+> > [Ascii Art (Shaders)](/docs/workshops/workshop2/asciiart)
 
 > :Collapse label=P5 Code Snippets
 > 
