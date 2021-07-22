@@ -1,4 +1,4 @@
-# Rendering
+# Hardware Gray
 
 ## Luma Grayscale
 

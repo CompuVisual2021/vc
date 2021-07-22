@@ -1,4 +1,4 @@
-# Rendering
+# Ascii Art
 
 > :Tabs
 > > :Tab title=Texture, icon=visibility

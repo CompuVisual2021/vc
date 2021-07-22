@@ -1,4 +1,4 @@
-# Rendering
+# Photo Mosaic
 
 > :Tabs
 > > :Tab title=Texture, icon=visibility
