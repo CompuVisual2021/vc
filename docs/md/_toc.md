@@ -15,6 +15,7 @@
 > > [Hardware Weighted Gray](/docs/workshops/workshop2/hardwareGray)
 > > [Ascii Art (Shaders)](/docs/workshops/workshop2/asciiart)
 > > [Photomosaic (Shaders)](/docs/workshops/workshop2/photomosaic)
+> > [Conclusions](/docs/workshops/workshop2/Conclusions)
 
 > :Collapse label=P5 Code Snippets
 > 
