@@ -12,7 +12,8 @@
 > > :Collapse label=Workshop 2
 > >
 > > [Global Illumination](/docs/workshops/workshop2/lumi)
-> > [Hardware Weighted Gray](/docs/workshops/workshop2/hardwareGray)
+> > [Hardware Gray](/docs/workshops/workshop2/hardwareGray)
+> > [Kernel](/docs/workshops/workshop2/kernel)
 > > [Ascii Art (Shaders)](/docs/workshops/workshop2/asciiart)
 > > [Photomosaic (Shaders)](/docs/workshops/workshop2/photomosaic)
 > > [Conclusions](/docs/workshops/workshop2/Conclusions)
